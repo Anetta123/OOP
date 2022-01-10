@@ -1,0 +1,22 @@
+{
+  "variant":28,
+  "figures": [
+       "Trapezoid"
+       "Rhombus"
+       "Pentagon"
+],
+ "containers":[
+   "TQueue",
+   "TNaryTree",
+],
+"finished_labs"{
+  "lab0.1:": "laba01",
+  "lab0.2:": "laba02",
+  "lab1:": "laba1",
+  "lab2:": "laba2",
+  "lab3:": "laba3",
+  "lab4:": "laba4",
+  "lab5:": "laba5",
+  "lab6:": "laba6"
+}
+ }
