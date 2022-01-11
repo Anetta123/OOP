@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.20)
+project(lab6)
+
+set(CMAKE_CXX_STANDARD 20)
+
+add_executable(lab6 figure.h iterator.h list_item.h main.cpp node.cpp node.h point.cpp point.h tallocator.h tlinked_list.h tnarytree.cpp tnarytree.h trapezoid.cpp trapezoid.h
+        )
