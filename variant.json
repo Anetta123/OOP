@@ -7,7 +7,7 @@
 ],
  "containers":[
    "TQueue",
-   "TNaryTree",
+   "TLinkedList",
 ],
 "finished_labs"{
   "lab0.1:": "laba01",
