@@ -1,7 +1,0 @@
-cmake_minimum_required(VERSION 3.20)
-project(lab1)
-
-set(CMAKE_CXX_STANDARD 14)
-
-add_executable(lab1
-        main.cpp figure.h pentagon.cpp pentagon.h point.cpp point.h rhombus.cpp rhombus.h trapezoid.cpp trapezoid.h )
