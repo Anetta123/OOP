@@ -4,28 +4,27 @@
 
 int main()
 {
-    std::cout << "if u wanna use interactive mode press 1, else press 0: ";
+    std::cout << "press 1 for start: ";
     int xui;
     std::cin >> xui;
     if (xui) {
         char c;
-        std::cout << "Press '?' for help:\n";
+        std::cout << "Press '?':\n";
         while ((c = getchar()) != EOF) {
             if (c == '?') {
-                std::cout << "U can:\n";
-                std::cout << "press t -- Play with Trapezoid\n";
-                std::cout << "press r -- Play with Rhombus\n";
-                std::cout << "press p -- Play with Pentagon\n";
+                std::cout << "press t -- for trapezoid\n";
+                std::cout << "press r -- for Rhombus\n";
+                std::cout << "press p -- for Pentagon\n";
                 std::cout << "press e -- Exit\n";
             }
             else if (c == 't') {
-                std::cout << "Trapezoid Mode...\nUse coodinates. Type of points - double\n";
+                std::cout << "Trapezoid \nUse coodinates. Type of points - double\n";
                 Trapezoid a(std::cin);
                 std::cout << "ab = " << a.len_ab << " bc = " << a.len_bc << " cd = " << a.len_cd << " da = " << a.len_da << std::endl; 
                 std::cout << "Area = " << a.Area() << std::endl;
                 std::cout << "Vertex Number = " << a.VertexesNumber() << std::endl;
                 a.Print(std::cout);  
-                std::cout << "Complete, press next button...\n";          
+                std::cout << "Please click another button\n";          
             }
             else if (c == 'r') {
                 std::cout << "Rhombus Mode...\nUse coodinates. Type of points - double\n";
@@ -34,7 +33,7 @@ int main()
                 std::cout << "Area = " << b.Area() << std::endl;
                 std::cout << "Vertex Number = " << b.VertexesNumber() << std::endl;
                 b.Print(std::cout);
-                std::cout << "Complete, press next button...\n";  
+                std::cout << "Please click another button\n";  
             }
             else if (c == 'p') {
                 Pentagon c(std::cin);
@@ -49,19 +48,16 @@ int main()
                 std::cout << "Area = " << c.Area() << std::endl;
                 std::cout << "Vertex Number = " << c.VertexesNumber() << std::endl;
                 c.Print(std::cout);
-                std::cout << "Complete, press next button...\n";  
+                std::cout << "Please click another button\n";  
             }
             else if (c == 'e') {
-                std::cout << "End session..." << std::endl;
+                std::cout << "End" << std::endl;
                 return 0;
             }
             else if (!(c == 't' || c == 'r' || c == 'p' || c == '?') && (c != ' ' && c != '\n' && c != '\t')) {
-                std::cout << "Damn bro... wrong button, try again\n";
+                std::cout << "try again\n";
             }
         }
-    }
-    else {
-        std::cout << "Stop it, get some help(\n";
     }
     return 0;
 }
